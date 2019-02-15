@@ -1,17 +1,25 @@
 <template>
 	<el-container>
 <el-header>Header</el-header>
-<vAside></vAside>
- <!-- <el-main> -->
+  <el-container>
+    <vAside></vAside>
+    <el-main>
    <router-view/>
- <!-- </el-main> -->
+ </el-main>
+  </el-container>
+
  <el-footer>footer</el-footer>
 </el-container>
 
 </template>
+<style>
+.el-header,{
+  /*position: fixed;*/
+}
+</style>
 <script>
 // import vHeader from './header.vue'
-import vAside from './aside.vue'
+import vAside from './sidebar.vue'
 	 export default {
      components:{vAside}
 	 }

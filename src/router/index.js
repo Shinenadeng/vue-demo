@@ -43,6 +43,42 @@ export default new Router({
                 }
             ]
 
+        }, {
+            path: '/sidebarcontain',
+            component: resolve => require(['../components/sidebar-contain/home.vue'], resolve),
+            meta: {
+                title: '首页'
+            }
+            ,
+            children: [{
+                    path: '/page5',
+                    component: resolve => require(['../components/page/page5.vue'], resolve),
+                    meta: {
+                        title: '页面1'
+                    }
+                },
+            //     {
+            //         path: '/page2',
+            //         component: resolve => require(['../components/page/page2.vue'], resolve),
+            //         meta: {
+            //             title: '页面2'
+            //         }
+            //     }, {
+            //         path: '/page3',
+            //         component: resolve => require(['../components/page/page3.vue'], resolve),
+            //         meta: {
+            //             title: '页面3'
+            //         }
+            //     }
+            //     , {
+            //         path: '/page4',
+            //         component: resolve => require(['../components/page/page4.vue'], resolve),
+            //         meta: {
+            //             title: '页面4'
+            //         }
+            //     }
+            ]
+
         }
     ]
 })

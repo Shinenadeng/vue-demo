@@ -73,6 +73,11 @@
                                 title: '文件上传'
                             }
                         ]
+                    },
+                    {
+                        icon: 'el-icon-lx-cascades',
+                        index: 'sidebarcontain',
+                        title: '更换面板'
                     }
                 ]
       };
