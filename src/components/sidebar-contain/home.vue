@@ -10,21 +10,12 @@
 
  <el-footer>footer</el-footer>
 </el-container>
-
+  
 </template>
 <style>
-.el-header,{
-  /*position: fixed;*/
+html,body,#app{
+  height:100%;
 }
-</style>
-<script>
-// import vHeader from './header.vue'
-import vAside from './sidebar.vue'
-	 export default {
-     components:{vAside}
-	 }
-</script>
-<style>
   .el-header, .el-footer {
     background-color: #B3C0D1;
     color: #333;
@@ -36,4 +27,17 @@ import vAside from './sidebar.vue'
     bottom:0;
     width:100%;
   }
-  </style>
+.el-container{
+  height: 100%;
+}
+.el-main{
+  margin-bottom: 60px;
+}
+</style>
+<script>
+// import vHeader from './header.vue'
+import vAside from './sidebar.vue'
+	 export default {
+     components:{vAside}
+	 }
+</script>
